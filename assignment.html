@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="wrap d-flex">
+        <nav class="aside d-flex flex-column justify-content-between">
+            <div>
+               <h1 class="mb-4"><a href="" class="d-flex align-items-center"><span class="material-icons me-2">
+                brightness_7
+            </span>SMILE</a></h1>
+                <ul>
+                    <li><a href=""><span class="material-icons me-3">
+                                analytics
+                            </span>Dashboard</a></li>
+                    <li><a href=""><span class="material-icons me-3">
+                                question_answer
+                            </span>Question</a></li>
+                    <li><a href="assignment.html" class="active"><span class="material-icons me-3">
+                                assignment
+                            </span>Assignment</a></li>
+                    <li><a href=""><span class="material-icons me-3">
+                                video_library
+                            </span>Course</a></li>
+                    <li><a href="admin.html"><span class="material-icons me-3">
+                                group
+                            </span>Admin</a></li>
+                    <li><a href=""><span class="material-icons me-3">
+                                settings
+                            </span>Settings</a></li>
+                </ul>
+            </div>
+            
+            <div class="user d-flex">
+                <div class="pic ">
+                </div>
+                <div class="txt ms-3">
+                    <h5 class="mb-1">Andy Chen</h5>
+                    <p>andy0401@mail.com</p>
+                </div>
+            </div>
+        </nav>
+        <!-- 右側Assignment開始 -->
+        <main>
+            <!-- 表頭開始 -->
+            <section class="d-flex align-items-center justify-content-between mb-5">
+                <div class="main-header d-flex align-items-center">
+                    <h2>Assignment</h2>
+                    <div class="dropdown ms-5">
+                        <a href="" class="  d-flex align-items-center" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All Courses<span class="material-icons ms-1">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><span class="material-icons">
+                        search
+                    </span></a>
+                    <a href="" class="ms-4"><span class="material-icons">
+                        notifications_active
+                    </span></a>
+                </div>
+            </section>
+            <!-- 表頭結束 -->
+            <!-- 數量開始 -->
+            <section class="d-flex align-items-center justify-content-between mb-1">
+                <div class="dropdown ">
+                    <a href="" class="  d-flex align-items-center" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        All Courses<span class="material-icons ms-1">
+                            keyboard_arrow_down
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+                <small>2 comments</small>
+            </section>
+            <!-- 數量結束 -->
+            <!-- 內文開始 -->
+            <section class="Assignment-content">
+                <div class="row  justify-content-between  ">
+                    <!-- 章節開始 -->
+                    <div class="col-4 Assignment-list  ">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                                href="#list-home" role="tab" aria-controls="home">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="mb-1">Chapter Assignment 2</small>
+                                    <small>4 hrs ago</small>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Please check this file…</h6>
+                                    <small class="text-b600">Emily Wang</small>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="mb-1">Chapter Assignment 1</small>
+                                    <small>12 hrs ago</small>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">My Homework</h6>
+                                    <small class="text-b600">David Xu</small>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="mb-1">Final Assignment</small>
+                                    <small>18 hrs ago</small>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Have a problem with this…</h6>
+                                    <small class="text-b600">Tony Wei</small>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="mb-1">Final Assignment</small>
+                                    <small>19 hrs ago</small>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Did I do it right?</h6>
+                                    <small class="text-b600">Christina Lin</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 章節結束 -->
+                    <div class="col-8 Assignment-text   ">
+                        <div class="tab-content " id="nav-tabContent" >
+                            <!-- 項目一開始 -->
+                            <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                <div class="card mb-3">
+                                    <div class="card-header d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <small>Chapter Assignment 2 / HTML&CSS</small>
+                                            <h5>Please check this file for me, thanks!</h5>
+                                        </div>
+                                        <div>
+                                            <a href=""><span class="material-icons">
+                                                more_vert
+                                            </span></a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="media d-flex justify-content-between mb-3  ">
+                                            <div class="pic"></div>
+                                            <div class="txt ">
+                                                <div class="mb-2">
+                                                    <h5 class="mt-0">Media heading</h5>
+                                                    <time>10:38 AM (4 hours ago)</time>
+                                                </div>
+                                                <p class="mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the
+                                                height of the <code>div</code>  is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a
+                                                padding/margin. What is the gap or extra space below image?</p>
+                                                <button class="btn d-flex align-items-center mb-3"><span class="material-icons me-1">
+                                                    attach_file
+                                                </span>HW-2-David.zip</button>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="media d-flex justify-content-between  ">
+                                            <div class="pic-m"></div>
+                                            <div class="txt ">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div>
+                                                        <h5 class="mt-0">Andy Chen (You)</h5>
+                                                        <time>13:24 AM (1 hours ago)</time>
+                                                    </div>
+                                                    <div>
+                                                        <a href=""><span class="material-icons">
+                                                            star_outline
+                                                        </span></a>
+                                                        <a href="" class="ms-3"><span class="material-icons">
+                                                            edit
+                                                        </span></a>
+                                                    </div>
+                                                </div>
+                                                <p class="mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.
+                                                There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                                                <p class="mb-3">You can:</p>
+                                                <ol>
+                                                    <li>• adjust the
+                                                    vertical-align of the image to position it elsewhere <code>(e.g. the middle</code> </li>
+                                                    <li>• change the <code>display</code>  so it isn’t inline.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- 輸出按鈕開始 -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href=""><span class="material-icons">
+                                            chevron_left
+                                        </span></a>
+                                        <a href=""  class="ms-3"><span class="material-icons">
+                                            chevron_right
+                                        </span></a>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <button class="btn btn-outline " type="button">Mark as read</button>
+                                        <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                    </div>
+                                    
+                                </div>
+                                <!-- 輸出按鈕結束 -->
+                                <!-- 填寫資料開始 -->
+                                <div class="card card-body-text">
+                                    <div class="card-header d-flex  align-items-center card-lh  ">
+                                        <div class="dropdown me-5">
+                                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Body Text
+                                            </a>
+                                        
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                format_bold
+                                            </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                format_italic
+                                            </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                list
+                                            </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                format_list_numbered
+                                            </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                insert_photo
+                                            </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                link
+                                            </span></a>
+                                            <a href="" class="d-flex"><span class="material-icons">
+                                                code
+                                            </span></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label label-color">Reply an answer…</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-end ">
+                                            <button class="btn btn-outline btn-cancel " type="button" >Cancel</button>
+                                            <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- 填寫資料結束 -->
+                            </div>
+                            <!-- 項目一結束 -->
+                            <!-- 項目二開始 -->
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between align-items-center ">
+                                    <div>
+                                        <small>Chapter Assignment 2 / HTML&CSS</small>
+                                        <h5>Please check this file for me, thanks!</h5>
+                                    </div>
+                                    <div>
+                                        <a href=""><span class="material-icons">
+                                                more_vert
+                                            </span></a>
+                                    </div>
+                            
+                                </div>
+                                <div class="card-body">
+                                    <div class="media d-flex justify-content-between mb-3  ">
+                                        <div class="pic"></div>
+                                        <div class="txt ">
+                                            <div class="mb-2">
+                                                <h5 class="mt-0">Media heading</h5>
+                                                <time>10:38 AM (4 hours ago)</time>
+                                            </div>
+                                            <p class="mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+                                                Why in the following code the
+                                                height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap
+                                                below the image, but it doesn’t seems to be a
+                                                padding/margin. What is the gap or extra space below image?</p>
+                                            <button class="btn d-flex align-items-center mb-3"><span class="material-icons me-1">
+                                                    attach_file
+                                                </span>HW-2-David.zip</button>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="media d-flex justify-content-between  ">
+                                        <div class="pic-m"></div>
+                                        <div class="txt ">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <div>
+                                                    <h5 class="mt-0">Andy Chen (You)</h5>
+                                                    <time>13:24 AM (1 hours ago)</time>
+                                                </div>
+                                                <div>
+                                                    <a href=""><span class="material-icons">
+                                                            star_outline
+                                                        </span></a>
+                                                    <a href="" class="ms-3"><span class="material-icons">
+                                                            edit
+                                                        </span></a>
+                                                </div>
+                                            </div>
+                                            <p class="mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                                                line that a, b, c and d sit on.
+                                                There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                                            <p class="mb-3">You can:</p>
+                                            <ol>
+                                                <li>• adjust the
+                                                    vertical-align of the image to position it elsewhere <code>(e.g. the middle</code> </li>
+                                                <li>• change the <code>display</code> so it isn’t inline.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            <!-- 輸出按鈕開始 -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href=""><span class="material-icons">
+                                            chevron_left
+                                        </span></a>
+                                    <a href="" class="ms-3"><span class="material-icons">
+                                            chevron_right
+                                        </span></a>
+                                </div>
+                                <div class="d-flex ">
+                                    <button class="btn btn-outline " type="button">Mark as read</button>
+                                    <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                </div>
+                            
+                            </div>
+                            <!-- 輸出按鈕結束 -->
+                            <!-- 填寫資料開始 -->
+                            <div class="card card-body-text">
+                                <div class="card-header d-flex  align-items-center card-lh  ">
+                                    <div class="dropdown me-5">
+                                        <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Body Text
+                                        </a>
+                            
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="" class="d-flex me-4"><span class="material-icons">
+                                                format_bold
+                                            </span></a>
+                                        <a href="" class="d-flex me-4"><span class="material-icons">
+                                                format_italic
+                                            </span></a>
+                                        <a href="" class="d-flex me-4"><span class="material-icons">
+                                                list
+                                            </span></a>
+                                        <a href="" class="d-flex me-4"><span class="material-icons">
+                                                format_list_numbered
+                                            </span></a>
+                                        <a href="" class="d-flex me-4"><span class="material-icons">
+                                                insert_photo
+                                            </span></a>
+                                        <a href="" class="d-flex me-4"><span class="material-icons">
+                                                link
+                                            </span></a>
+                                        <a href="" class="d-flex"><span class="material-icons">
+                                                code
+                                            </span></a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label label-color">Reply an answer…</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <div class="d-flex justify-content-end ">
+                                        <button class="btn btn-outline btn-cancel " type="button">Cancel</button>
+                                        <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            <!-- 填寫資料結束 -->
+                            </div>
+                            <!-- 項目二結束 -->
+                            <!-- 項目三開始 -->
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                <div class="card mb-3">
+                                    <div class="card-header d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <small>Chapter Assignment 2 / HTML&CSS</small>
+                                            <h5>Please check this file for me, thanks!</h5>
+                                        </div>
+                                        <div>
+                                            <a href=""><span class="material-icons">
+                                                    more_vert
+                                                </span></a>
+                                        </div>
+                                
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="media d-flex justify-content-between mb-3  ">
+                                            <div class="pic"></div>
+                                            <div class="txt ">
+                                                <div class="mb-2">
+                                                    <h5 class="mt-0">Media heading</h5>
+                                                    <time>10:38 AM (4 hours ago)</time>
+                                                </div>
+                                                <p class="mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+                                                    Why in the following code the
+                                                    height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap
+                                                    below the image, but it doesn’t seems to be a
+                                                    padding/margin. What is the gap or extra space below image?</p>
+                                                <button class="btn d-flex align-items-center mb-3"><span class="material-icons me-1">
+                                                        attach_file
+                                                    </span>HW-2-David.zip</button>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="media d-flex justify-content-between  ">
+                                            <div class="pic-m"></div>
+                                            <div class="txt ">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div>
+                                                        <h5 class="mt-0">Andy Chen (You)</h5>
+                                                        <time>13:24 AM (1 hours ago)</time>
+                                                    </div>
+                                                    <div>
+                                                        <a href=""><span class="material-icons">
+                                                                star_outline
+                                                            </span></a>
+                                                        <a href="" class="ms-3"><span class="material-icons">
+                                                                edit
+                                                            </span></a>
+                                                    </div>
+                                                </div>
+                                                <p class="mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                                                    line that a, b, c and d sit on.
+                                                    There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                                                <p class="mb-3">You can:</p>
+                                                <ol>
+                                                    <li>• adjust the
+                                                        vertical-align of the image to position it elsewhere <code>(e.g. the middle</code> </li>
+                                                    <li>• change the <code>display</code> so it isn’t inline.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <!-- 輸出按鈕開始 -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href=""><span class="material-icons">
+                                                chevron_left
+                                            </span></a>
+                                        <a href="" class="ms-3"><span class="material-icons">
+                                                chevron_right
+                                            </span></a>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <button class="btn btn-outline " type="button">Mark as read</button>
+                                        <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                    </div>
+                                
+                                </div>
+                                <!-- 輸出按鈕結束 -->
+                                <!-- 填寫資料開始 -->
+                                <div class="card card-body-text">
+                                    <div class="card-header d-flex  align-items-center card-lh  ">
+                                        <div class="dropdown me-5">
+                                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Body Text
+                                            </a>
+                                
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    format_bold
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    format_italic
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    list
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    format_list_numbered
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    insert_photo
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    link
+                                                </span></a>
+                                            <a href="" class="d-flex"><span class="material-icons">
+                                                    code
+                                                </span></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label label-color">Reply an answer…</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-end ">
+                                            <button class="btn btn-outline btn-cancel " type="button">Cancel</button>
+                                            <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <!-- 填寫資料結束 -->
+                            </div>
+                            <!-- 項目三結束 -->
+                            <!-- 項目四開始 -->
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                <div class="card mb-3">
+                                    <div class="card-header d-flex justify-content-between align-items-center ">
+                                        <div>
+                                            <small>Chapter Assignment 2 / HTML&CSS</small>
+                                            <h5>Please check this file for me, thanks!</h5>
+                                        </div>
+                                        <div>
+                                            <a href=""><span class="material-icons">
+                                                    more_vert
+                                                </span></a>
+                                        </div>
+                                
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="media d-flex justify-content-between mb-3  ">
+                                            <div class="pic"></div>
+                                            <div class="txt ">
+                                                <div class="mb-2">
+                                                    <h5 class="mt-0">Media heading</h5>
+                                                    <time>10:38 AM (4 hours ago)</time>
+                                                </div>
+                                                <p class="mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+                                                    Why in the following code the
+                                                    height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap
+                                                    below the image, but it doesn’t seems to be a
+                                                    padding/margin. What is the gap or extra space below image?</p>
+                                                <button class="btn d-flex align-items-center mb-3"><span class="material-icons me-1">
+                                                        attach_file
+                                                    </span>HW-2-David.zip</button>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="media d-flex justify-content-between  ">
+                                            <div class="pic-m"></div>
+                                            <div class="txt ">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div>
+                                                        <h5 class="mt-0">Andy Chen (You)</h5>
+                                                        <time>13:24 AM (1 hours ago)</time>
+                                                    </div>
+                                                    <div>
+                                                        <a href=""><span class="material-icons">
+                                                                star_outline
+                                                            </span></a>
+                                                        <a href="" class="ms-3"><span class="material-icons">
+                                                                edit
+                                                            </span></a>
+                                                    </div>
+                                                </div>
+                                                <p class="mb-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same
+                                                    line that a, b, c and d sit on.
+                                                    There is space below that line for the descenders you find on letters like g, j, p and q. </p>
+                                                <p class="mb-3">You can:</p>
+                                                <ol >
+                                                    <li >• adjust the
+                                                    vertical-align of the image to position it elsewhere <code>(e.g. the middle</code> </li>
+                                                    
+                                                    <li >• change the <code>display</code> so it isn’t inline.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <!-- 輸出按鈕開始 -->
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <a href=""><span class="material-icons">
+                                                chevron_left
+                                            </span></a>
+                                        <a href="" class="ms-3"><span class="material-icons">
+                                                chevron_right
+                                            </span></a>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <button class="btn btn-outline " type="button">Mark as read</button>
+                                        <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                    </div>
+                                
+                                </div>
+                                <!-- 輸出按鈕結束 -->
+                                <!-- 填寫資料開始 -->
+                                <div class="card card-body-text">
+                                    <div class="card-header d-flex  align-items-center card-lh  ">
+                                        <div class="dropdown me-5">
+                                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Body Text
+                                            </a>
+                                
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    format_bold
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    format_italic
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    list
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    format_list_numbered
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    insert_photo
+                                                </span></a>
+                                            <a href="" class="d-flex me-4"><span class="material-icons">
+                                                    link
+                                                </span></a>
+                                            <a href="" class="d-flex"><span class="material-icons">
+                                                    code
+                                                </span></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label label-color">Reply an answer…</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-end ">
+                                            <button class="btn btn-outline btn-cancel " type="button">Cancel</button>
+                                            <button class="btn  btn-color ms-3 btn-reply" type="button">Reply</button>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <!-- 填寫資料結束 -->
+                            </div>
+                            <!-- 項目四結束 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 內文結束 -->
+        </main>
+        <!-- 右側Assignment結束 -->
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,484 @@
+ul,li,p,h1,h2,h3,h4,h5,small{
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+	line-height: 1.5;
+}
+a{
+	text-decoration: none !important;
+}
+
+
+.btn:focus,.btn:active ,textarea:focus,textarea:active { /*去除按鈕籃框*/
+   outline: none !important;
+   box-shadow: none !important;
+}
+// reset
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@1,900&display=swap');
+// 以上為reset
+// font-family
+$font-family-base:'Lato', sans-serif;
+$font-family-title:'Merriweather', serif;
+// font-size
+$font-12:12px;
+$font-14:14px;
+$font-16:16px;
+$font-24:24px;
+$font-32:32px;
+$font-40:40px;
+$font-48:48px;
+$font-72:72px;
+$font-96:96px;
+// font-weight
+$bold-weight:700;
+$regular-weight:400;
+$black-weight:900;
+
+
+//color
+$black-600:rgba(0, 0, 0, 0.6);
+$black-870:rgba(0, 0, 0, 0.87);
+$primary:#121212;
+$secondary:#995a6b;
+$success:rgba(232, 229, 238, 0.4);
+$border-color:#e2d8d8;
+$white:#FFFFFF;
+$bg-color:#eee5e9;
+
+
+// space
+.mb-16{
+	margin-bottom: 16px !important;
+}
+.mb-32{
+	margin-bottom: 32px !important;
+}
+.mb-64{
+	margin-bottom: 64px !important;
+}
+body{
+	color:$primary !important;
+	font-family: $font-family-base !important;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+*,*::after,*::before{
+	box-sizing: border-box;
+	
+}
+
+// 左側選單開始
+.aside{
+	width: 296px;
+	position: fixed; /*絕對定位不占空間，右側要magin推*/
+	background: $bg-color;
+	padding-top: 32px !important;
+	padding-bottom: 32px !important;
+	top: 0;
+	bottom: 0;
+	
+	h1,.user{
+		margin-left: 32px !important;
+	}
+	h1{
+		font-size: $font-24;
+		font-weight: $black-weight;
+		letter-spacing: .25em;
+		
+	}
+	h1 a{
+	color: $primary;
+	}
+	h1 span{
+		font-size: $font-40;
+		color: $secondary;
+	}
+	
+	li{
+		margin-bottom: 16px !important;
+		// border: 1px solid black;
+	}
+	li:hover{
+		background: #e2d8d8;
+	}
+	li a{
+		display: flex;
+		align-items: center;
+		color:$primary;
+		font-weight: $bold-weight;
+		padding-left: 32px !important;
+		line-height: 2.5em;
+		
+	}
+	.active{
+		color: $secondary;
+		border-left: 4px solid $secondary;
+		padding-left: 28px !important;
+	}
+	.pic{
+		background: url(../img/nav.jpg)no-repeat;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-position: center center;
+		background-size: cover;
+		border-radius: 100%;
+	}
+	
+	h5{
+		font-size: $font-16;
+		font-weight: $bold-weight;
+	}
+	p{
+		font-size: $font-14;
+		color: $black-600;
+	}
+}
+// 左側選單結束
+
+// 右側Assignment開始
+main{
+	margin-left: 296px !important;
+	width: 100%;
+	padding: 32px !important;
+	a{
+		color: $primary;
+	}
+	small{
+		font-size: $font-12;
+	}	
+}
+
+
+// 下拉選單樣式開始
+.dropdown .material-icons{
+	color: $black-600;
+}
+.dropdown{
+	font-weight: $bold-weight;
+}
+.dropdown-menu {
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+}
+.dropdown-menu button{
+	padding: 8px 16px  !important;
+}
+// 下拉選單樣式結束
+
+.main-header{
+	h2{
+		font-size: $font-24;
+		font-weight: $bold-weight;
+	}
+}
+// 內文開始
+.Assignment-content{
+	
+	// 章節開始
+	.Assignment-list{
+		width: 35%;
+		h6{
+			font-size: $font-16;
+			font-weight: $bold-weight
+		}
+		.list-group-item{
+			padding: 12px !important;
+			line-height: 1.3em;
+			color:$primary !important;
+			border: 1px solid $border-color;
+		}
+		.active{
+			background: $bg-color;
+			border: 1px solid $border-color;
+		}
+		.text-b600{
+			color:$black-600;
+		}
+		
+	}
+	// 章節內容開始
+	.Assignment-text{
+		width: 63%;
+		
+		.card{
+			border: 1px solid $border-color;
+		}
+		.card-header{
+			padding: 12px 16px !important;
+			background: $bg-color;
+			border-bottom: 1px solid $border-color;
+		}
+		.card-body{
+			padding: 16px 32px 24px 16px !important;
+		}
+		.pic{
+			background: url('../img/u1.jpg')no-repeat;
+			height: 40px;
+			width:40px;
+			border-radius: 50%;
+			background-position: center center;
+			background-size: cover;
+		}
+		.pic-m{
+			background: url('../img/nav.jpg')no-repeat;
+			height: 40px;
+			width:40px;
+			border-radius: 50%;
+			background-position: center center;
+			background-size: cover;
+		}
+		.txt{
+			width: 90%;
+		}
+		h5{
+			font-size: $font-16;
+			font-weight: $bold-weight;
+		}
+		time{
+			font-size: $font-12;
+			color: $black-600;
+		}
+		p{
+			font-size: $font-14;
+		}
+		code{
+			background:$bg-color;
+			color:$secondary;
+			padding: 4px !important;
+			border-radius: 4px
+		}
+		button{
+			background: $bg-color;
+			border: 1px solid $border-color;
+			padding: 8px 12px !important;
+			color:$primary;
+			font-weight: $bold-weight;
+		}
+		.btn-outline{
+			background:transparent;
+			border: 2px solid $secondary;
+			color:$secondary;
+			padding-left:24px !important ;
+			padding-right:24px !important ;
+		}
+		.btn-outline:hover{
+			background: $bg-color;
+		}
+		.btn-color{
+			background: $secondary;
+			border: none;
+			color: $white;
+			padding-left:24px !important ;
+			padding-right:24px !important ;
+		}
+		.btn-color:hover{
+			opacity: .87;
+		}
+		ol li:nth-child(1){
+			margin-bottom: 16px !important;
+			
+		}
+
+		// 填寫資料開始
+		.card-body-text{
+			position: absolute;
+			margin-top: -160px; /*位置不占空間*/
+			right: -120%; /*超出視窗右邊*/
+			z-index: 1;
+			transition: .45s;
+			bottom:-100%; /*超出視窗底下*/
+		}
+		.tab-content.active .card-body-text  {
+			position: absolute ;
+			margin-top: -160px ; /*位置不占空間*/
+			right: 0 ;
+			width: 100%; /*寬滿版*/
+			bottom: 0;/*回到視窗*/
+		}
+		.tab-content{
+			overflow: hidden;
+			position: relative;
+		}
+		.label-color{
+			color: rgba(0, 0, 0, 0.38) !important;
+		}
+		textarea{
+			background: $white !important;
+			
+		}
+		.card-lh{
+			line-height: 2.5em;
+		}
+		// 填寫資料結束
+	}
+}
+
+// 右側Assignment結束
+
+// admin.html開始
+.admim-content{
+	tr{
+	line-height: 3em;
+	}
+
+	.material-icons{
+		vertical-align:middle ;
+	}
+	.text-middle span{
+		vertical-align: middle;
+	}
+ 	tbody tr:hover{
+		background: $success;
+ 	}
+	 
+	.modal-footer{
+		border-top:  none !important;
+	}	
+	 
+ 	.page-link{
+	 	padding: 6px !important;
+		 
+ 	}
+ 	.page-link2{
+		padding: 6px 12px !important;
+ 	}
+	 .pagination a{
+		 color: $primary;
+	 }
+	 .pagination a:hover{
+		 background: $bg-color;
+	 }
+
+	.pagination .active a{
+		 background: $secondary !important;
+		 color: white !important;
+		 border: $secondary;
+	 }
+	 .eye{
+		 padding: 32px;
+		.txt{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.pic{
+			background: url('../img/p1.jpg')no-repeat;
+			background-position: center center;
+			background-size: cover;
+			width: 141px;
+			height: 141px;
+			border-radius: 2px;
+	 	}
+		 h5{
+			font-size: $font-24;
+			font-weight: $bold-weight;
+			
+		 }
+		 small{
+			 font-size: $font-14;
+		 }
+		 .badge{
+			 background:$bg-color;
+			 color: $primary;
+			 line-height: 1.5em;
+			 padding: 4px 12px !important;
+		 }
+		 
+		// 箭頭方向(當modal-content加上active，箭頭轉方向)
+		.active .arrow{
+			transform: scale(-1) !important;
+		}
+		// (預設物件關閉，當modal-content加上active，物件打開)
+		.modal-footer{
+			 display: none;
+		 }
+		.active .modal-footer{
+			display: block !important;
+		}
+		.btn-secondary{
+			background: $white;
+			border: 2px solid $secondary;
+			color: $secondary;
+			font-weight: $bold-weight;
+		}
+		.btn-primary{
+			background:$secondary;
+			border: none;
+			padding:0px 32px !important;
+		}
+		.btn-secondary:hover{
+			background: $bg-color;
+		}
+		.btn-primary:hover{
+			opacity: .87;
+		}
+
+
+		
+		
+	}
+}
+// admin.html結束
+// edit modal開始
+		.form-control,.form-select,.button-p{
+					padding:.8rem .75rem !important;
+				}
+		.form-control{
+			border: none !important;
+			background:$bg-color !important;
+			&::placeholder{
+				color:$primary !important;
+			}
+		}
+		.check_circle{
+			color: $secondary !important;
+		}
+		.form-select{
+			border: 1px solid $primary !important;
+			color: $primary !important;
+		}
+		.form-check-input:checked {
+			background-color: $secondary !important;
+			border-color: $secondary !important;
+		}
+		.btn-cancel{
+			background: $white !important;
+			border: 2px solid $secondary !important;
+			color: $secondary !important;
+			font-weight: $bold-weight !important;
+		}
+		.btn-update{
+			background: $secondary !important;
+			border: 2px solid $secondary !important;
+		}
+		.btn-cancel:hover{
+			background: $bg-color !important;
+		}
+		.btn-update:hover{
+			opacity: .87;
+		}
+		option{
+			padding: 88px 0px !important;
+		}
+		// edit modal結束
+		// add new admin Modal開始
+		.addnew-modal{
+			.input-outline{
+				background: $white !important;
+				border: 1px solid $primary !important;
+			}
+			.button-p{
+				color: $secondary !important;
+				border: 1px solid $secondary;
+			}
+		}
+		// add new admin Modal結束
+		
+		

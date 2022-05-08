@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@1,900&display=swap");
+ul, li, p, h1, h2, h3, h4, h5, small {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn:focus, .btn:active, textarea:focus, textarea:active {
+  /*去除按鈕籃框*/
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.mb-64 {
+  margin-bottom: 64px !important;
+}
+
+body {
+  color: #121212 !important;
+  font-family: "Lato", sans-serif !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.aside {
+  width: 296px;
+  position: fixed;
+  /*絕對定位不占空間，右側要magin推*/
+  background: #eee5e9;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  top: 0;
+  bottom: 0;
+}
+
+.aside h1, .aside .user {
+  margin-left: 32px !important;
+}
+
+.aside h1 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: .25em;
+}
+
+.aside h1 a {
+  color: #121212;
+}
+
+.aside h1 span {
+  font-size: 40px;
+  color: #995a6b;
+}
+
+.aside li {
+  margin-bottom: 16px !important;
+}
+
+.aside li:hover {
+  background: #e2d8d8;
+}
+
+.aside li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #121212;
+  font-weight: 700;
+  padding-left: 32px !important;
+  line-height: 2.5em;
+}
+
+.aside .active {
+  color: #995a6b;
+  border-left: 4px solid #995a6b;
+  padding-left: 28px !important;
+}
+
+.aside .pic {
+  background: url(../img/nav.jpg) no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.aside h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.aside p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main {
+  margin-left: 296px !important;
+  width: 100%;
+  padding: 32px !important;
+}
+
+main a {
+  color: #121212;
+}
+
+main small {
+  font-size: 12px;
+}
+
+.dropdown .material-icons {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown {
+  font-weight: 700;
+}
+
+.dropdown-menu {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.dropdown-menu button {
+  padding: 8px 16px  !important;
+}
+
+.main-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Assignment-content .Assignment-list {
+  width: 35%;
+}
+
+.Assignment-content .Assignment-list h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.Assignment-content .Assignment-list .list-group-item {
+  padding: 12px !important;
+  line-height: 1.3em;
+  color: #121212 !important;
+  border: 1px solid #e2d8d8;
+}
+
+.Assignment-content .Assignment-list .active {
+  background: #eee5e9;
+  border: 1px solid #e2d8d8;
+}
+
+.Assignment-content .Assignment-list .text-b600 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.Assignment-content .Assignment-text {
+  width: 63%;
+}
+
+.Assignment-content .Assignment-text .card {
+  border: 1px solid #e2d8d8;
+}
+
+.Assignment-content .Assignment-text .card-header {
+  padding: 12px 16px !important;
+  background: #eee5e9;
+  border-bottom: 1px solid #e2d8d8;
+}
+
+.Assignment-content .Assignment-text .card-body {
+  padding: 16px 32px 24px 16px !important;
+}
+
+.Assignment-content .Assignment-text .pic {
+  background: url("../img/u1.jpg") no-repeat;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Assignment-content .Assignment-text .pic-m {
+  background: url("../img/nav.jpg") no-repeat;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.Assignment-content .Assignment-text .txt {
+  width: 90%;
+}
+
+.Assignment-content .Assignment-text h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.Assignment-content .Assignment-text time {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.Assignment-content .Assignment-text p {
+  font-size: 14px;
+}
+
+.Assignment-content .Assignment-text code {
+  background: #eee5e9;
+  color: #995a6b;
+  padding: 4px !important;
+  border-radius: 4px;
+}
+
+.Assignment-content .Assignment-text button {
+  background: #eee5e9;
+  border: 1px solid #e2d8d8;
+  padding: 8px 12px !important;
+  color: #121212;
+  font-weight: 700;
+}
+
+.Assignment-content .Assignment-text .btn-outline {
+  background: transparent;
+  border: 2px solid #995a6b;
+  color: #995a6b;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.Assignment-content .Assignment-text .btn-outline:hover {
+  background: #eee5e9;
+}
+
+.Assignment-content .Assignment-text .btn-color {
+  background: #995a6b;
+  border: none;
+  color: #FFFFFF;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.Assignment-content .Assignment-text .btn-color:hover {
+  opacity: .87;
+}
+
+.Assignment-content .Assignment-text ol li:nth-child(1) {
+  margin-bottom: 16px !important;
+}
+
+.Assignment-content .Assignment-text .card-body-text {
+  position: absolute;
+  margin-top: -160px;
+  /*位置不占空間*/
+  right: -120%;
+  /*超出視窗右邊*/
+  z-index: 1;
+  -webkit-transition: .45s;
+  transition: .45s;
+  bottom: -100%;
+  /*超出視窗底下*/
+}
+
+.Assignment-content .Assignment-text .tab-content.active .card-body-text {
+  position: absolute;
+  margin-top: -160px;
+  /*位置不占空間*/
+  right: 0;
+  width: 100%;
+  /*寬滿版*/
+  bottom: 0;
+  /*回到視窗*/
+}
+
+.Assignment-content .Assignment-text .tab-content {
+  overflow: hidden;
+  position: relative;
+}
+
+.Assignment-content .Assignment-text .label-color {
+  color: rgba(0, 0, 0, 0.38) !important;
+}
+
+.Assignment-content .Assignment-text textarea {
+  background: #FFFFFF !important;
+}
+
+.Assignment-content .Assignment-text .card-lh {
+  line-height: 2.5em;
+}
+
+.admim-content tr {
+  line-height: 3em;
+}
+
+.admim-content .material-icons {
+  vertical-align: middle;
+}
+
+.admim-content .text-middle span {
+  vertical-align: middle;
+}
+
+.admim-content tbody tr:hover {
+  background: rgba(232, 229, 238, 0.4);
+}
+
+.admim-content .modal-footer {
+  border-top: none !important;
+}
+
+.admim-content .page-link {
+  padding: 6px !important;
+}
+
+.admim-content .page-link2 {
+  padding: 6px 12px !important;
+}
+
+.admim-content .pagination a {
+  color: #121212;
+}
+
+.admim-content .pagination a:hover {
+  background: #eee5e9;
+}
+
+.admim-content .pagination .active a {
+  background: #995a6b !important;
+  color: white !important;
+  border: #995a6b;
+}
+
+.admim-content .eye {
+  padding: 32px;
+}
+
+.admim-content .eye .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admim-content .eye .pic {
+  background: url("../img/p1.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 141px;
+  height: 141px;
+  border-radius: 2px;
+}
+
+.admim-content .eye h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.admim-content .eye small {
+  font-size: 14px;
+}
+
+.admim-content .eye .badge {
+  background: #eee5e9;
+  color: #121212;
+  line-height: 1.5em;
+  padding: 4px 12px !important;
+}
+
+.admim-content .eye .active .arrow {
+  -webkit-transform: scale(-1) !important;
+          transform: scale(-1) !important;
+}
+
+.admim-content .eye .modal-footer {
+  display: none;
+}
+
+.admim-content .eye .active .modal-footer {
+  display: block !important;
+}
+
+.admim-content .eye .btn-secondary {
+  background: #FFFFFF;
+  border: 2px solid #995a6b;
+  color: #995a6b;
+  font-weight: 700;
+}
+
+.admim-content .eye .btn-primary {
+  background: #995a6b;
+  border: none;
+  padding: 0px 32px !important;
+}
+
+.admim-content .eye .btn-secondary:hover {
+  background: #eee5e9;
+}
+
+.admim-content .eye .btn-primary:hover {
+  opacity: .87;
+}
+
+.form-control, .form-select, .button-p {
+  padding: .8rem .75rem !important;
+}
+
+.form-control {
+  border: none !important;
+  background: #eee5e9 !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #121212 !important;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #121212 !important;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #121212 !important;
+}
+
+.form-control::placeholder {
+  color: #121212 !important;
+}
+
+.check_circle {
+  color: #995a6b !important;
+}
+
+.form-select {
+  border: 1px solid #121212 !important;
+  color: #121212 !important;
+}
+
+.form-check-input:checked {
+  background-color: #995a6b !important;
+  border-color: #995a6b !important;
+}
+
+.btn-cancel {
+  background: #FFFFFF !important;
+  border: 2px solid #995a6b !important;
+  color: #995a6b !important;
+  font-weight: 700 !important;
+}
+
+.btn-update {
+  background: #995a6b !important;
+  border: 2px solid #995a6b !important;
+}
+
+.btn-cancel:hover {
+  background: #eee5e9 !important;
+}
+
+.btn-update:hover {
+  opacity: .87;
+}
+
+option {
+  padding: 88px 0px !important;
+}
+
+.addnew-modal .input-outline {
+  background: #FFFFFF !important;
+  border: 1px solid #121212 !important;
+}
+
+.addnew-modal .button-p {
+  color: #995a6b !important;
+  border: 1px solid #995a6b;
+}
+/*# sourceMappingURL=all.css.map */
